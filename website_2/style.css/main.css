@@ -1,0 +1,227 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    
+    font-family: 'Open Sans', sans-serif;
+}
+
+section{
+    scroll-margin-top: 70px;
+}
+
+.wrapper{
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1200px;
+}
+
+.hero-bg{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: rgba(0,0,0,0.5);
+}
+
+.hero-text{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    font-weight: bold;
+    color: white;
+}
+
+.hero-text h1{
+    margin-bottom: 5px;
+    text-shadow: 3px 3px 5px black;
+}
+.hero-text span{
+    text-transform: uppercase;
+    color: aqua;
+}
+
+.section-title{
+    margin-bottom: 20px;
+    text-align: center;
+    text-transform: uppercase;
+}
+/*nawigacja*/
+nav{
+    position: sticky;
+    top: 0;
+    height: 60px;
+    line-height: 60px;
+    background-color: gainsboro;
+    text-align: center;
+    z-index: 1;
+}
+
+
+
+.burger-icon{
+    display: block;
+    margin-left: auto;
+    padding: 0 30px;
+    line-height: 60px;
+    font-size: 30px;
+    background: none;
+    border: none;
+}
+
+.nav-items{
+    display: none;
+}
+
+/*header*/
+
+.header{
+    position: relative;
+    height: 330px;
+    background-image: url(../img/hero-small.jpg);
+    background-size: cover;
+    background-position: center;
+   
+}
+
+/*main*/
+
+main{
+    margin: 50px 0;
+}
+
+/* o nas */
+
+.about-us-info{
+    margin-bottom: 10px;
+    padding: 0 20px;
+}
+
+/* produkty*/
+
+.products{
+    margin: 60px auto;
+}
+
+.product h3{
+    text-transform: uppercase;
+    font-weight: bold;
+    transition: 0.5s;
+    
+}
+
+.product{
+    position: relative;
+    margin: 30px auto;
+    height: 300px;   
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+}
+
+.product:hover h3{   
+    transform: scale(1.6);
+}
+
+.first-product{   
+    background-image: url('../img/childer-small.jpg');
+}
+
+
+.second-product{ 
+    background-image: url('../img/keyboard-small.jpg');  
+}
+
+.third-product{
+    background-image: url('../img/woman-small.jpg');
+}
+
+.fourth-product{
+    background-image: url('../img/laptop-small.jpg');  
+}
+
+
+@media (min-width:768px) {
+    .burger-icon{
+        display: none;
+    }
+    .nav-items{
+        display: block;
+    }
+    .nav-items a{
+        padding: 0 30px;
+        text-decoration: none;
+        text-transform: uppercase;
+        font-weight: bold;
+        color: #333;
+        transition: color 0.3s;
+    }
+    .nav-items a:hover{
+        color: aqua;
+       
+    }
+
+
+    .header{
+        
+        height: 400px;
+        background-image: url(../img/hero-big.jpg);
+       
+    
+    }
+    .hero-text h1{
+       font-size: 36px;
+    }
+    .hero-text p{
+        font-size: 18px;
+    }
+
+    .product h3{
+        font-size: 26px;
+        
+    }
+}
+
+/*kontakt*/
+.contact{
+    text-align: center;
+}
+
+.contact h3{
+    text-transform: uppercase;
+    margin: 20px 0 5px;
+}
+
+/*footer */
+
+footer{
+    padding: 20px 10px;
+    text-align: center;
+    background-color: whitesmoke;
+}
+@media (min-width:992px) {
+    .products-box{
+        font-size: 0px;
+    }
+    .product{
+       display: inline-block;
+       width: 50%;
+    }
+    
+}
+@media (min-width:1200px) {
+  
+    .hero-text h1{
+       font-size: 42px;
+    }
+    .hero-text p{
+        font-size: 22px;
+    }
+}
